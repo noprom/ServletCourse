@@ -13,5 +13,10 @@
   <body>
     <h1>第一个Servet案例</h1>
     <a href="servet/HelloServet">GET请求</a>
+    <form action="servet/HelloServet" method="post">
+      <input type="text" name="username"/>
+      <input type="text" name="password"/>
+      <button type="submit">提交</button>
+    </form>
   </body>
 </html>

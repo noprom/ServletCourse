@@ -14,15 +14,20 @@ public class HelloServet extends HttpServlet{
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        super.doGet(request, response);
         System.out.println("处理GET请求");
         PrintWriter out = response.getWriter();
-        response.setContentType("text/html;charset=utf-8");
+        response.setContentType("text/html;charset=UTF-8");
         out.println("<h1>Hello World!</h1>");
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.doPost(req, resp);
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("处理POST请求");
+        String username = request.getParameter("username");
+        String password = request.getParameter("password");
+        PrintWriter out = response.getWriter();
+        response.setContentType("text/html;charset=UTF-8");
+        out.println("<h1>Username:</h1>" + username);
+        out.println("<h1>Password:</h1>" + password);
     }
 }
