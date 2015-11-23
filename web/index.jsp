@@ -28,7 +28,7 @@
 </head>
 <body>
 <div class="container">
-  <h1 class="page-header">Servlet路径跳转</h1>
+  <h1 class="page-header">Servlet学习示例</h1>
   <div class="row">
     <div class="col-md-10">
         <%--相对路径--%>
@@ -36,6 +36,7 @@
         <%--绝对路径--%>
         <a href="<%=path%>/servet/RegServet" class="btn btn-primary">注册(绝对路径)</a>
           <a href="servet/LoginServet" class="btn btn-primary">登录</a>
+          <a href="servet/GetInitParameterServlet" class="btn btn-primary">获取初始化参数</a>
     </div>
   </div>
 </div>
