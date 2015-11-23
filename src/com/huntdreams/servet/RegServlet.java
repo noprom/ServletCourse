@@ -48,6 +48,6 @@ public class RegServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request, response);
+        request.getRequestDispatcher("/reg.jsp").forward(request, response);
     }
 }
