@@ -7,9 +7,16 @@
         <servlet-name>HelloServlet</servlet-name>
         <servlet-class>com.huntdreams.servet.HelloServet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RegServlet</servlet-name>
+        <servlet-class>com.huntdreams.servet.RegServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>HelloServlet</servlet-name>
         <url-pattern>/servet/HelloServet</url-pattern>
-        <url-pattern>/servet/LoginServet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegServlet</servlet-name>
+        <url-pattern>/servet/RegServet</url-pattern>
     </servlet-mapping>
 </web-app>
